@@ -16,17 +16,12 @@ var MessageList = React.createClass({
   }
 });
 
-// The MessageBox component covers the entire page (minus the navbar at the top)
-//
-// This component is responsible for coordinating all changes to messages objects
 var Inbox = React.createClass({
 
-  // The MessageBox component starts out with no data
   getInitialState: function() {
     return {messages: []};
   },
 
-  // When it's mounted, it makes an AJAX call to the server and loads messages
   componentDidMount: function() {
     $.getJSON("api/inbox.json").then(function (response) {
       this.setState({messages: response.messages});
