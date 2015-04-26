@@ -1,3 +1,5 @@
+# Intro to React
+
 script must have correct type
 classname not class
 visually inspect the page for components
@@ -24,4 +26,4 @@ Stories:
   extract a messagecount component that does pluralization correctly
   (fix the bug where it says "1 unread messages")
 
-  pass the labels in from the 
+  pass the labels in from the

@@ -1,17 +1,19 @@
 var SelectButton = React.createClass({
-  handleChange: function () {
+  handleClick: function (e) {
+    e.stopPropagation();
     this.props.didChange(this.props.message);
   },
 
   render: function () {
     return (
-      <input type="checkbox" checked={this.props.message.selected} onChange={this.handleChange} />
+      <input type="checkbox" checked={this.props.message.selected} onClick={this.handleClick} />
     )
   }
 });
 
 var StarButton = React.createClass({
-  handleChange: function () {
+  handleChange: function (e) {
+    e.stopPropagation();
     this.props.didChange(this.props.message);
   },
 
@@ -51,7 +53,6 @@ var Message = React.createClass({
   },
 
   handleClick: function () {
-    console.log(this.props.message);
     this.props.onClick(this.props.message);
   },
 
