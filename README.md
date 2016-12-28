@@ -1,3 +1,20 @@
+# DEPRECATED: 
+
+This repo has moved to https://github.com/gschool/react-drills
+
+```
+
+
+
+
+
+
+
+
+
+
+```
+
 # Intro to React
 
 ## Get up and running
